@@ -20,39 +20,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/dateFecha"
-        android:layout_width="327dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
-
     <Button
         android:id="@+id/btnCancelarFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:text="Cancelar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateFecha" />
+        app:layout_constraintTop_toBottomOf="@+id/editFechain" />
 
     <Button
         android:id="@+id/btnOkFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="59dp"
         android:text="@android:string/ok"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btnCancelarFecha"
-        app:layout_constraintTop_toBottomOf="@+id/dateFecha" />
+        app:layout_constraintTop_toBottomOf="@+id/editFechain" />
+
+    <EditText
+        android:id="@+id/editFechain"
+        android:layout_width="332dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="169dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Fecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

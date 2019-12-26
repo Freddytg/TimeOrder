@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.Date;
@@ -13,7 +14,7 @@ import java.util.Date;
 public class FechaActivity extends AppCompatActivity {
 
     private TextView txtFecha;
-    private Date dateFecha;
+    private EditText editFechain;
     private Button btnCancelarFecha;
     private Button btnOkFecha;
 
@@ -23,6 +24,7 @@ public class FechaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fecha);
 
         this.txtFecha = (TextView) findViewById(R.id.txtFecha);
+        this.editFechain = (EditText) findViewById(R.id.editFechain);
         this.btnCancelarFecha = (Button) findViewById(R.id.btnCancelarFecha);
         this.btnOkFecha = (Button) findViewById(R.id.btnOkFecha);
 
